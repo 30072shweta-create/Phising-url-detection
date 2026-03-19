@@ -40,5 +40,8 @@ def predict():
 @app.route('/usecases', methods=['GET', 'POST'])
 def usecases():
     return render_template('usecases.html')
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
