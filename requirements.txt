@@ -1,6 +1,3 @@
-pip
-setuptools
-wheel
 beautifulsoup4==4.12.3
 Flask==3.0.3
 numpy==1.26.4
